@@ -18,3 +18,5 @@ def depth_first(graph, source):
 
 if __name__ == '__main__':
     depth_first(graph, 'a')
+
+# https://www.youtube.com/watch?v=tWVWeAqZ0WU&t=1333s

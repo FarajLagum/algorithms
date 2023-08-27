@@ -10,24 +10,24 @@ graph = {
 }  # directed graph
 
 
-def depth_first(graph, source, destination):
-    queue_list = [source]
+def has_path(graph, source, destination):
+    queue = [source]
     visited_nodes = []
 
-    while len(queue_list) > 0:
-        current_source = queue_list.pop(0)  # popleft()
+    while len(queue) > 0:
+        current_source = queue.pop(0)  # popleft()
         print(current_source)
         if current_source == destination:
             return True
         visited_nodes.append(current_source)
         for neighbor in graph[current_source]:
-            queue_list.append(neighbor)
+            queue.append(neighbor)
 
-    return False
+    return         
 
 
 if __name__ == '__main__':
-    visited_nodes = depth_first(graph, 'a', "c")
-    print(visited_nodes)
+    flag = has_path(graph, 'a', "c")
+    print(flag)
 
 # https://www.youtube.com/watch?v=tWVWeAqZ0WU&t=1333s

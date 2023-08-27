@@ -11,15 +11,15 @@ graph = {
 
 
 def depth_first(graph, source):
-    queue_list = [source]
+    queue = [source]
     visited_nodes = []
 
-    while len(queue_list) > 0:
-        current = queue_list.pop(0)  # popleft()
+    while len(queue) > 0:
+        current = queue.pop(0)  # popleft() remove from the front (left)
         print(current)
-        visited_nodes.append(current)
+        visited_nodes.append(current) # add to the back (right)
         for neighbor in graph[current]:
-            queue_list.append(neighbor)
+            queue.append(neighbor)  # add to the back (right)
 
     return visited_nodes
 

@@ -7,6 +7,9 @@ edges = [
     ]
 
 def build_graph(edges):
+    '''
+    convert edges list to adjacency list
+    '''
     graph = {}
 
     for edge in edges:

@@ -18,6 +18,7 @@ def explore_dfs(grid, row, coloumn, visited):
             return False
 
         current_pos = (row, coloumn) # you can present the visited nodes as string as f"{row},{coloumn}"
+        
         if current_pos in visited:
             return False
         visited.add(current_pos)
@@ -61,3 +62,4 @@ grid3=[['W', 'W'],
 grid4=[['W']] # Output: 0
 
 print(island_count(grid0))  
+#print(len(grid3[1]))

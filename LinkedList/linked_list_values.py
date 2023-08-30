@@ -1,6 +1,7 @@
 """
-Write a function, linkedListValues, that takes in the head of a linked list as an argument. 
+Write a function, linked_list_values, that takes in the head of a linked list as an argument. 
 The function should return an array containing all values of the nodes in the linked list.
+https://youtu.be/Hj_rA0dhr2I?si=_fD6o-IAH1uN74ig&t=1419
 """
 
 class Node(object):

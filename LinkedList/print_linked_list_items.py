@@ -22,7 +22,7 @@ def print_linked_list_iterative(head):
     while current != None: 
         print(current.value)
         current = current.next
-        print(current)
+        # print(current)
 
 
 print_linked_list_iterative(a)

@@ -1,4 +1,7 @@
-Binary Tree
+# https://www.youtube.com/watch?v=fAAZixBzIAI
+
+
+# Binary Tree
 
 - A Binary tree is a tree wher every node has at most two children.
 - Binary tree has exactly 1 root.
@@ -15,9 +18,19 @@ Binary Tree
 
  
 
-# https://www.youtube.com/watch?v=fAAZixBzIAI
+# Binary Tree terms
+- root node
+- leaf node
+- partent node
+- child node
 
-root
-leaf
-partent
-child
+
+
+
+
+# pytest
+
+to run pytest for terminal:
+python3 -m pytest    # test all
+python -m pytest module_test.py
+python3 -m pytest depth_first_values_test.py

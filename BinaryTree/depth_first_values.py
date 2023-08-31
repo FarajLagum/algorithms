@@ -7,7 +7,7 @@ from BinaryTreeNodeClass import Node
 
 
 def depth_first_values(root):
-    if not root:
+    if root is None or root is []: # if not root:
         return []
 
     stack = [root]
@@ -21,6 +21,23 @@ def depth_first_values(root):
         if node.left:
             stack.append(node.left)
     return values
+
+
+
+
+# n = number of nodes
+# Time: O(n)
+# Space: O(n)
+# recursive
+def depth_first_values_recursive(root):
+  if not root:
+    return []
+  
+  left_values = depth_first_values_recursive(root.left)
+  right_values = depth_first_values_recursive(root.right)
+  # return [root.val, *left_values, *right_values]
+  return [root.value] + left_values + right_values
+
 
 
 if __name__ == "__main__":
@@ -43,3 +60,4 @@ if __name__ == "__main__":
     # d   e     f
 
     print(depth_first_values(a))
+    print(depth_first_values_recursive(a))

@@ -1,14 +1,16 @@
-from depth_first_values import depth_first_values
 from BinaryTreeNodeClass import Node
+from depth_first_values import depth_first_values, depth_first_values_recursive
 
 
 def test_depth_first_values_empty_tree():
     assert depth_first_values(None) == []
+    assert depth_first_values_recursive(None) == []
 
 
 def test_depth_first_values_single_node():
     root = Node('a')
     assert depth_first_values(root) == ['a']
+    assert depth_first_values_recursive(root) == ['a']
 
 
 def test_00():
@@ -32,6 +34,7 @@ def test_00():
     # d   e     f
 
     assert depth_first_values(a) == ['a', 'b', 'd', 'e', 'c', 'f']
+    assert depth_first_values_recursive(a) == ['a', 'b', 'd', 'e', 'c', 'f']
 
 
 def test_01():
@@ -56,14 +59,15 @@ def test_01():
     #    /
     #   g
 
-    result = depth_first_values(a)
-    assert result == ['a', 'b', 'd', 'e', 'g', 'c', 'f']
+    assert depth_first_values(a) == ['a', 'b', 'd', 'e', 'g', 'c', 'f']
+    assert depth_first_values_recursive(a) == ['a', 'b', 'd', 'e', 'g', 'c', 'f']
 
 
 def test_02():
     a = Node('a')
 
     assert depth_first_values(a) == ['a']
+    assert depth_first_values_recursive(a) == ['a']
 
 
 def test_03():
@@ -88,3 +92,4 @@ def test_03():
     #          e
 
     assert depth_first_values(a) == ['a', 'b', 'c', 'd', 'e']
+    assert depth_first_values_recursive(a) == ['a', 'b', 'c', 'd', 'e']

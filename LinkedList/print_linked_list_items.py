@@ -15,7 +15,7 @@ c.next = d
 
 # A -> B -> C -> D -> Null
 
-# iterative
+# iterative: time = O(n); Space = O(1)
 def print_linked_list_iterative(head):
     current = head # current is a Node
 
@@ -27,10 +27,10 @@ def print_linked_list_iterative(head):
 
 print_linked_list_iterative(a)
 
-# recursive
+# recursive: time = O(n); Space = O(n)
 def print_linked_list_recursive(current):
     if current != None:
-        return
+        return  # Terminate recursion
     print(current.value)
 
     print_linked_list_recursive(current.next)

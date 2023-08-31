@@ -32,7 +32,6 @@ def linked_list_values(current):
     return values
 
 
-print(linked_list_values(a))
 
 
 
@@ -52,5 +51,9 @@ def fill_values(current, values):
 
      
 
+if __name__ == "__main__":
+   print(linked_list_values(a))
 
-print(linked_list_values_recursive(a))
+   print(linked_list_values_recursive(a))
+
+

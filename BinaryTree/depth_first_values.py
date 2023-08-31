@@ -1,3 +1,8 @@
+'''
+Write a function, depth_first_values, that takes in the root of a binary tree. 
+The function should return a list containing all values of the tree in depth-first order
+'''
+
 from BinaryTreeNodeClass import Node
 
 

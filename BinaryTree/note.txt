@@ -1,4 +1,23 @@
 Binary Tree
 
+- A Binary tree is a tree wher every node has at most two children.
+- Binary tree has exactly 1 root.
+- There is exactly one path between root and any node.
+- No cycles.
+- empty tree is a binary tree.
+- a node is represented as a class instance.
+- Chideren are defined in terms of the partent node as left child and right child 
+
+
+                    (node.left) <--- (node)  ---> (node.right) 
+
+
+
+ 
 
 # https://www.youtube.com/watch?v=fAAZixBzIAI
+
+root
+leaf
+partent
+child

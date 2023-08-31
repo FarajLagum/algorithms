@@ -10,10 +10,10 @@ def towers_of_hanoi2(n, source, target):
     if n == 1:
         print(f"Move disk 1 from {source} to {target}")
         return
-    other = 6 - (source + target)
-    towers_of_hanoi2(n-1, source, other)
+    auxiliary = 6 - (source + target)
+    towers_of_hanoi2(n-1, source, auxiliary)
     print(f"Move disk {n} from {source} to {target}")
-    towers_of_hanoi2(n-1, other, target)
+    towers_of_hanoi2(n-1, auxiliary, target)
 
 
 

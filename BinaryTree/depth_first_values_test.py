@@ -51,6 +51,7 @@ def test_01():
     b.right = e
     c.right = f
     e.left = g
+
     #      a
     #    /   \
     #   b     c
@@ -59,8 +60,21 @@ def test_01():
     #    /
     #   g
 
+<<<<<<< Updated upstream
     assert depth_first_values(a) == ['a', 'b', 'd', 'e', 'g', 'c', 'f']
     assert depth_first_values_recursive(a) == ['a', 'b', 'd', 'e', 'g', 'c', 'f']
+=======
+    result = depth_first_values(a)
+    assert result == ['a', 'b', 'd', 'e', 'g', 'c', 'f']
+    # Optional: Individual node value checks
+    assert result[0] == 'a'
+    assert result[1] == 'b'
+    assert result[2] == 'd'
+    assert result[3] == 'e'
+    assert result[4] == 'g'
+    assert result[5] == 'c'
+    assert result[6] == 'f'
+>>>>>>> Stashed changes
 
 
 def test_02():

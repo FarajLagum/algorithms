@@ -34,3 +34,21 @@ to run pytest for terminal:
 python3 -m pytest    # test all
 python -m pytest module_test.py
 python3 -m pytest depth_first_values_test.py
+
+
+
+pytest vs  unittest
+
+assert something        |  assertTrue(something)    |
+
+assert not something    | assertFalse(something)    | 
+
+assert a == b           | assertEqual(a, b)         |
+
+assert a != b           | assertNotEqual(a, b)      |
+
+assert a is None        | assertIsNone(a)           | 
+
+assert a is not None    | assertIsNotNone(a)        |
+
+assert a <= b           | assertLessEqual(a, b)     |

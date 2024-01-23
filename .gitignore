@@ -49,3 +49,17 @@ package.nls.*.json
 l10n/
 .vscode
 **/.vscode
+# Ignore Python bytecode files
+*.pyc
+
+# Ignore __pycache__ directories
+__pycache__/
+
+# Ignore all __pycache__ directories
+**/__pycache__/
+
+# Ignore specific files
+BinaryTree/__pycache__/BinaryTreeNodeClass.cpython-311.pyc
+BinaryTree/__pycache__/depth_first_values.cpython-311.pyc
+BinaryTree/__pycache__/depth_first_values_test.cpython-311-pytest-7.4.0.pyc
+BinaryTree/__pycache__/depth_first_values_test.cpython-311.pyc

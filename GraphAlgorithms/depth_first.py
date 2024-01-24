@@ -13,7 +13,7 @@ graph = {
 def depth_first(graph, source):
     stack = [source]
 
-    while len(stack) > 0:
+    while len(stack) > 0: # while stack: # works well
         current = stack.pop()
         print(current)
         for neighbor in graph[current]: # graph[current] returns the list of neighbor nodes

@@ -17,11 +17,11 @@ def has_path(graph, src, dest):
     if src == dest:
         return True
     for neighbor in graph[src]:
-        if (has_path(graph, neighbor, dest) == True):
+        if has_path(graph, neighbor, dest):
             return True
     return False
 
 
 if __name__ == "__main__":
-    flag = has_path(graph, "f", "j")
+    flag = has_path(graph, "f", "k")
     print(flag)

@@ -17,7 +17,7 @@ def has_path(graph, src, dest):
     if src == dest:
         return True
     for neighbor in graph[src]:
-        if has_path(graph, neighbor, dest):
+        if has_path(graph, neighbor, dest): # if Trues
             return True
     return False
 

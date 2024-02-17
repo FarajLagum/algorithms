@@ -25,11 +25,11 @@ def print_linked_list_iterative(head):
         # print(current)
 
 
-print_linked_list_iterative(a)
+#print_linked_list_iterative(a)
 
 # recursive: time = O(n); Space = O(n)
 def print_linked_list_recursive(current):
-    if current != None:
+    if current == None:
         return  # Terminate recursion
     print(current.value)
 

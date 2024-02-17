@@ -31,7 +31,7 @@ def linked_list_find(head, traget):
     return False
 
 
-print(linked_list_find(a, "G"))
+print(linked_list_find(a, "D"))
 
 
 
@@ -41,10 +41,10 @@ def linked_list_find_recursive(head, traget):
 
     if head is None:
         return False
-    elif head.value == traget:
+    if head.value == traget:
         return True
   
     return linked_list_find_recursive(head.next, traget)  
 
 
-print(linked_list_find_recursive(a, "D"))
+print(linked_list_find_recursive(a, "G"))

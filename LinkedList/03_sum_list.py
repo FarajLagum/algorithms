@@ -29,7 +29,6 @@ def sum_list(current):
         sum += current.value 
         current = current.next
         #print(current)
-
     return sum
 
 

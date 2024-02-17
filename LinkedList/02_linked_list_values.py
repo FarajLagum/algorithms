@@ -37,17 +37,21 @@ def linked_list_values(current):
 
 # recursive
 
+
+def fill_values(current, values):
+    if current == None:
+        return    
+    values.append(current.value)
+    fill_values(current.next, values)
+
+    
 def linked_list_values_recursive(current):
     values = []
     fill_values(current, values)
     return values
      
  
-def fill_values(current, values):
-    if current == None:
-        return    
-    values.append(current.value)
-    fill_values(current.next, values)
+
 
      
 

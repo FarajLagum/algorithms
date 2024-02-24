@@ -28,13 +28,13 @@ def explore_dfs(grid, row, coloumn, visited):
         
         if current_pos in visited:
             return False
-        visited.add(current_pos)
+        visited.add(current_pos) # if i passed all base casesabove, this I'm at un visited land
 
         explore_dfs(grid, row - 1, coloumn, visited)  # Up
         explore_dfs(grid, row + 1, coloumn, visited)  # Down
         explore_dfs(grid, row, coloumn - 1, visited)  # Left
         explore_dfs(grid, row, coloumn + 1, visited)  # Right
-        return True
+        return True # return true only if al least find one land (Discovered bran new Island)
 
 def island_count(grid):
     visited = set()    
